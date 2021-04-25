@@ -1,0 +1,79 @@
+{
+  "common": {
+    "name": "xiaomi-remote",
+    "version": "0.0.1",
+    "news": {
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "zh-cn": "首次出版"
+      }
+    },
+    "title": "Xiaomi Universal Remote Controller",
+    "titleLang": {
+      "en": "Xiaomi Universal Remote Controller",
+      "de": "Xiaomi Universalfernbedienung",
+      "ru": "Универсальный пульт дистанционного управления Xiaomi",
+      "pt": "Xiaomi Universal Remote Controller",
+      "nl": "Xiaomi universele afstandsbediening",
+      "fr": "Télécommande universelle Xiaomi",
+      "it": "Telecomando universale Xiaomi",
+      "es": "Mando a distancia universal Xiaomi",
+      "pl": "Uniwersalny pilot Xiaomi",
+      "zh-cn": "小米通用遥控器"
+    },
+    "desc": {
+      "en": "xiaomi-remote",
+      "de": "Xiaomi-Remote",
+      "ru": "Xiaomi-пульт",
+      "pt": "xiaomi-remote",
+      "nl": "xiaomi-afstandsbediening",
+      "fr": "télécommande xiaomi",
+      "it": "xiaomi-remote",
+      "es": "xiaomi-remote",
+      "pl": "xiaomi-remote",
+      "zh-cn": "小米远程"
+    },
+    "authors": [
+      "yivasyuk <yaroslav.ivasyuk@gmail.com>"
+    ],
+    "keywords": [
+      "ioBroker",
+      "template",
+      "Smart Home",
+      "home automation"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "build/main.js",
+    "icon": "xiaomi-remote.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/yivasyuk/ioBroker.xiaomi-remote/master/admin/xiaomi-remote.png",
+    "readme": "https://github.com/yivasyuk/ioBroker.xiaomi-remote/blob/master/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "multimedia",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "materialize": true,
+    "messagebox": true,
+    "dependencies": [
+      {
+        "js-controller": ">=2.0.0"
+      }
+    ],
+    "installedFrom": "https://github.com/yivasyuk/ioBroker.xiaomi-remote/tarball/88b88e843934e52bb715dd8508fe468575fb0892"
+  },
+  "native": {
+  },
+  "objects": [],
+  "instanceObjects": []
+}
