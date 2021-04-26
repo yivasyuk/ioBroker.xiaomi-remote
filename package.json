@@ -1,34 +1,42 @@
 {
+  "name": "iobroker.xiaomi-remote",
+  "version": "0.0.1",
+  "description": "xiaomi-remote",
   "author": {
     "name": "yivasyuk",
     "email": "yaroslav.ivasyuk@gmail.com"
   },
-  "bugs": {
-    "url": "https://github.com/yivasyuk/ioBroker.xiaomi-remote/issues"
+  "homepage": "https://github.com/yivasyuk/ioBroker.xiaomi-remote",
+  "license": "MIT",
+  "keywords": [
+    "ioBroker",
+    "template",
+    "Smart Home",
+    "home automation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yivasyuk/ioBroker.xiaomi-remote"
   },
-  "bundleDependencies": false,
   "dependencies": {
-    "@iobroker/adapter-core": "^2.4.0",
-    "miio": "^0.14.0"
+    "@iobroker/adapter-core": "^2.4.0"
   },
-  "deprecated": false,
-  "description": "xiaomi-remote",
   "devDependencies": {
     "@iobroker/testing": "^2.4.4",
-    "@types/chai": "^4.2.15",
+    "@types/chai": "^4.2.16",
     "@types/chai-as-promised": "^7.1.3",
     "@types/gulp": "^4.0.8",
     "@types/mocha": "^8.2.2",
-    "@types/node": "^14.14.37",
+    "@types/node": "^14.14.41",
     "@types/proxyquire": "^1.3.28",
-    "@types/sinon": "^9.0.11",
+    "@types/sinon": "^10.0.0",
     "@types/sinon-chai": "^3.2.5",
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
     "axios": "^0.21.1",
     "chai": "^4.3.4",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^7.23.0",
+    "eslint": "^7.25.0",
     "gulp": "^4.0.2",
     "mocha": "^8.3.2",
     "proxyquire": "^2.1.3",
@@ -37,35 +45,25 @@
     "sinon-chai": "^3.6.0",
     "source-map-support": "^0.5.19",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.4"
   },
-  "homepage": "https://github.com/yivasyuk/ioBroker.xiaomi-remote",
-  "keywords": [
-    "ioBroker",
-    "template",
-    "Smart Home",
-    "home automation"
-  ],
-  "license": "MIT",
   "main": "build/main.js",
-  "name": "iobroker.xiaomi-remote",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yivasyuk/ioBroker.xiaomi-remote.git"
-  },
   "scripts": {
-    "build": "npm run build:ts",
-    "build:ts": "tsc -p tsconfig.build.json",
-    "check": "tsc --noEmit",
-    "lint": "eslint --ext .ts src/",
     "prebuild": "rimraf ./build",
-    "test": "npm run test:ts && npm run test:package",
-    "test:integration": "mocha test/integration --exit",
-    "test:package": "mocha test/package --exit",
-    "test:ts": "mocha --config test/mocharc.custom.json src/**/*.test.ts",
-    "test:unit": "mocha test/unit --exit",
+    "build:ts": "tsc -p tsconfig.build.json",
+    "build": "npm run build:ts",
+    "watch:ts": "tsc -p tsconfig.build.json --watch",
     "watch": "npm run watch:ts",
-    "watch:ts": "tsc -p tsconfig.build.json --watch"
+    "test:ts": "mocha --config test/mocharc.custom.json src/**/*.test.ts",
+    "test:package": "mocha test/package --exit",
+    "test:unit": "mocha test/unit --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:ts && npm run test:package",
+    "check": "tsc --noEmit",
+    "lint": "eslint --ext .ts src/"
   },
-  "version": "0.0.1-1"
+  "bugs": {
+    "url": "https://github.com/yivasyuk/ioBroker.xiaomi-remote/issues"
+  },
+  "readmeFilename": "README.md"
 }

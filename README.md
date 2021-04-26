@@ -23,20 +23,20 @@ This section is intended for the developer. It can be deleted later
 You are almost done, only a few steps left:
 1. Create a new repository on GitHub with the name `ioBroker.xiaomi-remote`
 1. Initialize the current folder as a new git repository:  
-	```bash
-	git init
-	git add .
-	git commit -m "Initial commit"
-	```
+    ```bash
+    git init
+    git add .
+    git commit -m "Initial commit"
+    ```
 1. Link your local repository with the one on GitHub:  
-	```bash
-	git remote add origin https://github.com/yivasyuk/ioBroker.xiaomi-remote
-	```
+    ```bash
+    git remote add origin https://github.com/yivasyuk/ioBroker.xiaomi-remote
+    ```
 
 1. Push all files to the GitHub repo:  
-	```bash
-	git push origin master
-	```
+    ```bash
+    git push origin master
+    ```
 
 1. Head over to [src/main.ts](src/main.ts) and start programming!
 
@@ -81,15 +81,15 @@ of [ioBroker.repositories](https://github.com/ioBroker/ioBroker.repositories#req
 ### Test the adapter manually on a local ioBroker installation
 In order to install the adapter locally without publishing, the following steps are recommended:
 1. Create a tarball from your dev directory:  
-	```bash
-	npm pack
-	```
+    ```bash
+    npm pack
+    ```
 1. Upload the resulting file to your ioBroker host
 1. Install it locally (The paths are different on Windows):
-	```bash
-	cd /opt/iobroker
-	npm i /path/to/tarball.tgz
-	```
+    ```bash
+    cd /opt/iobroker
+    npm i /path/to/tarball.tgz
+    ```
 
 For later updates, the above procedure is not necessary. Just do the following:
 1. Overwrite the changed files in the adapter directory (`/opt/iobroker/node_modules/iobroker.xiaomi-remote`)
